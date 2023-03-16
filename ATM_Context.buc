@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.carrierSet name="'" org.eventb.core.comment="The set of all clients who use the ATM" org.eventb.core.identifier="Clients"/>
+    <org.eventb.core.constant name="(" org.eventb.core.comment="The subset of AccountType representing debit accounts." org.eventb.core.identifier="Debit"/>
+    <org.eventb.core.carrierSet name=")" org.eventb.core.comment="The set of all bank accounts" org.eventb.core.identifier="Accounts"/>
+    <org.eventb.core.carrierSet name="*" org.eventb.core.comment="The set of all account types. It is partitioned into two subsets: Credit and Debit." org.eventb.core.identifier="AccountType"/>
+    <org.eventb.core.constant name="+" org.eventb.core.comment="The subset of AccountType representing credit accounts." org.eventb.core.identifier="Credit"/>
+    <org.eventb.core.constant name="," org.eventb.core.comment="The maximum credit limit for an account." org.eventb.core.identifier="MaxCredit"/>
+    <org.eventb.core.axiom name="-" org.eventb.core.comment="The AccountType set is partitioned into two subsets: Debit and Credit." org.eventb.core.label="axm1" org.eventb.core.predicate="partition(AccountType, {Debit}, {Credit})"/>
+    <org.eventb.core.axiom name="." org.eventb.core.comment=" The maximum credit limit for an account is 1000." org.eventb.core.label="axm2" org.eventb.core.predicate="MaxCredit = 1000"/>
+    <org.eventb.core.constant name="/" org.eventb.core.comment="A function that maps currencies to their exchange rates." org.eventb.core.identifier="Exchange_rate"/>
+    <org.eventb.core.axiom name="0" org.eventb.core.label="axm3" org.eventb.core.predicate="partition(Currency, {UgandaShillings}, {Dollar}, {Euro}, {EAC}, {sourceCurrency}, {destinationCurrency})"/>
+    <org.eventb.core.carrierSet name="1" org.eventb.core.comment="The set of all currencies." org.eventb.core.identifier="Currency"/>
+    <org.eventb.core.constant name="2" org.eventb.core.comment="A currency" org.eventb.core.identifier="Dollar"/>
+    <org.eventb.core.constant name="3" org.eventb.core.comment="A currency" org.eventb.core.identifier="UgandaShillings"/>
+    <org.eventb.core.constant name="4" org.eventb.core.comment="A currency" org.eventb.core.identifier="EAC"/>
+    <org.eventb.core.constant name="5" org.eventb.core.comment="A currency" org.eventb.core.identifier="Euro"/>
+    <org.eventb.core.axiom name="6" org.eventb.core.comment="The exchange rate is a function that maps currencies to their exchange rates." org.eventb.core.label="axm4" org.eventb.core.predicate="Exchange_rate = ℕ "/>
+    <org.eventb.core.carrierSet name="7" org.eventb.core.comment="The set of all exchange rates." org.eventb.core.identifier="ExchangeRate"/>
+    <org.eventb.core.constant name="8" org.eventb.core.comment="The currency for the destination account" org.eventb.core.identifier="destinationCurrency"/>
+    <org.eventb.core.constant name="9" org.eventb.core.comment="The currency for the source account" org.eventb.core.identifier="sourceCurrency"/>
+    <org.eventb.core.axiom name=":" org.eventb.core.comment="The maximum debit limit for an account is 0.&#13;&#10;" org.eventb.core.label="axm5" org.eventb.core.predicate="MaxDebit = 0"/>
+    <org.eventb.core.constant name=";" org.eventb.core.comment="The maximum debit limit for an account." org.eventb.core.identifier="MaxDebit"/>
+    <org.eventb.core.constant name="=" org.eventb.core.identifier="ANY"/>
+    <org.eventb.core.constant name="&gt;" org.eventb.core.identifier="CDebit"/>
+    <org.eventb.core.constant name="?" org.eventb.core.identifier="CCredit"/>
+    <org.eventb.core.axiom name="@" org.eventb.core.label="axm6" org.eventb.core.predicate="partition(Clients, {ANY}, {CCredit}, {CDebit})"/>
+</org.eventb.core.contextFile>

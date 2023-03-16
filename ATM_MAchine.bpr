@@ -1,0 +1,1646 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Clients,{ANY},{CCredit},{CDebit}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22,p23,p24"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p21,p22,p23,p24"/>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="partition(Clients,{ANY},{CCredit},{CDebit})">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Dollar=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬ANY=CCredit">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬UgandaShillings=Dollar">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬CCredit=CDebit">
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="Clients={ANY,CCredit,CDebit}">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬UgandaShillings=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Dollar=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬Euro=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Dollar=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬ANY=CDebit">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Dollar=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬EAC=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Euro=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Euro=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬UgandaShillings=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬EAC=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv12/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19"/>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Dollar=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Dollar=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬EAC=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Euro=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬UgandaShillings=Dollar">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Euro=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬UgandaShillings=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬EAC=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Dollar=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Euro=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Authentication/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Accounts">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="p23" org.eventb.core.prInfHyps="p22"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p25">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p25" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="access" org.eventb.core.type="ℙ(Accounts)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="⊤⇒access=(∅ ⦂ ℙ(Accounts))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬UgandaShillings=Dollar">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="authorized=FALSE">
+            <org.eventb.core.prIdent name="authorized" org.eventb.core.type="BOOL"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Dollar=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Euro=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="authorized=FALSE⇒access=(∅ ⦂ ℙ(Accounts))">
+            <org.eventb.core.prIdent name="authorized" org.eventb.core.type="BOOL"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Dollar=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="access=(∅ ⦂ ℙ(Accounts))"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Dollar=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬EAC=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Euro=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Euro=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬EAC=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="TRUE=FALSE⇒access=(∅ ⦂ ℙ(Accounts))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Stop/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Accounts">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p21" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Dollar=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Dollar=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬EAC=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Euro=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬UgandaShillings=Dollar">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Euro=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬EAC=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=FALSE⇒(∅ ⦂ ℙ(Accounts))=(∅ ⦂ ℙ(Accounts))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Dollar=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Euro=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Accounts">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p21" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Dollar=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Dollar=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬EAC=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Euro=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬UgandaShillings=Dollar">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Euro=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬EAC=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=FALSE⇒(∅ ⦂ ℙ(Accounts))=(∅ ⦂ ℙ(Accounts))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Dollar=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Euro=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Transfer/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prHyps="p0,p1" org.eventb.core.prSets="Currency">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p21"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊥ hyp" org.eventb.core.prHyps="p24"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=sourceCurrency"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="sourceCurrency=destinationCurrency"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬UgandaShillings=Dollar"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=EAC"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Dollar=EAC"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Euro=EAC"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Dollar=destinationCurrency"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="source≠destination">
+            <org.eventb.core.prIdent name="Accounts" org.eventb.core.type="ℙ(Accounts)"/>
+            <org.eventb.core.prIdent name="destination" org.eventb.core.type="Accounts"/>
+            <org.eventb.core.prIdent name="source" org.eventb.core.type="Accounts"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Dollar=Euro"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬EAC=sourceCurrency"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Euro=sourceCurrency"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬source=destination">
+            <org.eventb.core.prIdent name="Accounts" org.eventb.core.type="ℙ(Accounts)"/>
+            <org.eventb.core.prIdent name="destination" org.eventb.core.type="Accounts"/>
+            <org.eventb.core.prIdent name="source" org.eventb.core.type="Accounts"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Euro=destinationCurrency"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=Euro"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬EAC=destinationCurrency"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.falseHyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Transfer/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prHyps="p0,p1" org.eventb.core.prSets="Currency">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p21"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊥ hyp" org.eventb.core.prHyps="p24"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=sourceCurrency"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="sourceCurrency=destinationCurrency"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬UgandaShillings=Dollar"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=EAC"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Dollar=EAC"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Euro=EAC"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Dollar=destinationCurrency"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="source≠destination">
+            <org.eventb.core.prIdent name="Accounts" org.eventb.core.type="ℙ(Accounts)"/>
+            <org.eventb.core.prIdent name="destination" org.eventb.core.type="Accounts"/>
+            <org.eventb.core.prIdent name="source" org.eventb.core.type="Accounts"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Dollar=Euro"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬EAC=sourceCurrency"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Euro=sourceCurrency"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬source=destination">
+            <org.eventb.core.prIdent name="Accounts" org.eventb.core.type="ℙ(Accounts)"/>
+            <org.eventb.core.prIdent name="destination" org.eventb.core.type="Accounts"/>
+            <org.eventb.core.prIdent name="source" org.eventb.core.type="Accounts"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Euro=destinationCurrency"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=Euro"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬EAC=destinationCurrency"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.falseHyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Transfer/grd7/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prHyps="p0,p1" org.eventb.core.prSets="Currency">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p21"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊥ hyp" org.eventb.core.prHyps="p22"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Dollar=destinationCurrency"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=sourceCurrency"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="sourceCurrency=destinationCurrency"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Dollar=Euro"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬EAC=sourceCurrency"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Euro=sourceCurrency"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬UgandaShillings=Dollar"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Euro=destinationCurrency"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=Euro"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=EAC"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬EAC=destinationCurrency"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Dollar=EAC"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Euro=EAC"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.falseHyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Withdraw/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Accounts">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p22"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p23"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p24"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p25"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p26">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p26" org.eventb.core.prHyps="p1">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p27">
+                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p28">
+                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p28" org.eventb.core.prHyps=""/>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                            <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p29">
+                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="p1"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="balance" org.eventb.core.type="ℙ(Accounts×ℤ)"/>
+        <org.eventb.core.prIdent name="source" org.eventb.core.type="Accounts"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Dollar=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="atm_user∈Clients">
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+            <org.eventb.core.prIdent name="atm_user" org.eventb.core.type="Clients"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=Dollar">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Euro=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="source∈dom(balance)"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="balance∈Accounts ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Dollar=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="access⊆Accounts">
+            <org.eventb.core.prIdent name="access" org.eventb.core.type="ℙ(Accounts)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="source∈dom(balance)∧balance∈Accounts ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Dollar=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬EAC=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Euro=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="balance∈Accounts → ℤ"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="clients2accounts∈Clients ↔ Accounts">
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+            <org.eventb.core.prIdent name="clients2accounts" org.eventb.core.type="ℙ(Clients×Accounts)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="source∈Accounts"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Euro=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬EAC=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="authorized∈BOOL">
+            <org.eventb.core.prIdent name="authorized" org.eventb.core.type="BOOL"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="Accounts"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Withdraw/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Clients,{ANY},{CCredit},{CDebit}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22,p23,p24"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p21,p22,p23,p24"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p25"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p26"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p27"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p28"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="partition(Clients,{ANY},{CCredit},{CDebit})">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Dollar=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="atm_user∈Clients">
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+            <org.eventb.core.prIdent name="atm_user" org.eventb.core.type="Clients"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬ANY=CCredit">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬UgandaShillings=Dollar">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬CCredit=CDebit">
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="Clients={ANY,CCredit,CDebit}">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬UgandaShillings=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Dollar=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬Euro=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Dollar=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬ANY=CDebit">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="access⊆Accounts">
+            <org.eventb.core.prIdent name="Accounts" org.eventb.core.type="ℙ(Accounts)"/>
+            <org.eventb.core.prIdent name="access" org.eventb.core.type="ℙ(Accounts)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Dollar=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬EAC=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Euro=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="clients2accounts∈Clients ↔ Accounts">
+            <org.eventb.core.prIdent name="Accounts" org.eventb.core.type="ℙ(Accounts)"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+            <org.eventb.core.prIdent name="clients2accounts" org.eventb.core.type="ℙ(Clients×Accounts)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Euro=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬UgandaShillings=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬EAC=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="authorized∈BOOL">
+            <org.eventb.core.prIdent name="authorized" org.eventb.core.type="BOOL"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Withdraw/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Accounts">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p23">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p23" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p24">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p24" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="balance" org.eventb.core.type="ℙ(Accounts×ℤ)"/>
+        <org.eventb.core.prIdent name="source" org.eventb.core.type="Accounts"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Dollar=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=Dollar">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬UgandaShillings=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Dollar=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Euro=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="source∈dom(balance)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="balance∈Accounts ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Dollar=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="source∈dom(balance)∧balance∈Accounts ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬EAC=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Euro=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬Euro=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬EAC=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="inv7/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AccountType,{Debit},{Credit}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Clients,{ANY},{CCredit},{CDebit}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22,p23,p24"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p21,p22,p23,p24"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p25"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p26"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p27"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p28"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Currency={UgandaShillings,Dollar,Euro,EAC,sourceCurrency,destinationCurrency}">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="partition(Clients,{ANY},{CCredit},{CDebit})">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Dollar=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="atm_user∈Clients">
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+            <org.eventb.core.prIdent name="atm_user" org.eventb.core.type="Clients"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UgandaShillings=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬ANY=CCredit">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬UgandaShillings=Dollar">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬CCredit=CDebit">
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="Clients={ANY,CCredit,CDebit}">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CCredit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬UgandaShillings=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Dollar=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Euro=EAC">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Dollar=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="AccountType={Debit,Credit}">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬ANY=CDebit">
+            <org.eventb.core.prIdent name="ANY" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="CDebit" org.eventb.core.type="Clients"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="access⊆Accounts">
+            <org.eventb.core.prIdent name="Accounts" org.eventb.core.type="ℙ(Accounts)"/>
+            <org.eventb.core.prIdent name="access" org.eventb.core.type="ℙ(Accounts)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Debit=Credit">
+            <org.eventb.core.prIdent name="AccountType" org.eventb.core.type="ℙ(AccountType)"/>
+            <org.eventb.core.prIdent name="Credit" org.eventb.core.type="AccountType"/>
+            <org.eventb.core.prIdent name="Debit" org.eventb.core.type="AccountType"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬UgandaShillings=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Dollar=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Dollar" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬EAC=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Euro=sourceCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬sourceCurrency=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="sourceCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="clients2accounts∈Clients ↔ Accounts">
+            <org.eventb.core.prIdent name="Accounts" org.eventb.core.type="ℙ(Accounts)"/>
+            <org.eventb.core.prIdent name="Clients" org.eventb.core.type="ℙ(Clients)"/>
+            <org.eventb.core.prIdent name="clients2accounts" org.eventb.core.type="ℙ(Clients×Accounts)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Euro=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬UgandaShillings=Euro">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="Euro" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="UgandaShillings" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬EAC=destinationCurrency">
+            <org.eventb.core.prIdent name="Currency" org.eventb.core.type="ℙ(Currency)"/>
+            <org.eventb.core.prIdent name="EAC" org.eventb.core.type="Currency"/>
+            <org.eventb.core.prIdent name="destinationCurrency" org.eventb.core.type="Currency"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="authorized∈BOOL">
+            <org.eventb.core.prIdent name="authorized" org.eventb.core.type="BOOL"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

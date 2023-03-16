@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(AccountType,{Debit},{Credit})" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="MaxCredit=1000" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.axiom#." org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="partition(Currency,{UgandaShillings},{Dollar},{Euro},{EAC},{sourceCurrency},{destinationCurrency})" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.axiom#0" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="Exchange_rate=ℕ" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.axiom#6" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="MaxDebit=0" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.axiom#:" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="," org.eventb.core.label="axm6" org.eventb.core.predicate="partition(Clients,{ANY},{CCredit},{CDebit})" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.axiom#@" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scConstant name="CCredit" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#?" org.eventb.core.type="Clients"/>
+    <org.eventb.core.scConstant name="CDebit" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#&gt;" org.eventb.core.type="Clients"/>
+    <org.eventb.core.scConstant name="sourceCurrency" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#9" org.eventb.core.type="Currency"/>
+    <org.eventb.core.scConstant name="MaxDebit" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#;" org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scConstant name="MaxCredit" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#," org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scCarrierSet name="AccountType" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.carrierSet#*" org.eventb.core.type="ℙ(AccountType)"/>
+    <org.eventb.core.scCarrierSet name="Currency" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.carrierSet#1" org.eventb.core.type="ℙ(Currency)"/>
+    <org.eventb.core.scConstant name="EAC" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#4" org.eventb.core.type="Currency"/>
+    <org.eventb.core.scConstant name="Euro" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#5" org.eventb.core.type="Currency"/>
+    <org.eventb.core.scCarrierSet name="Clients" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(Clients)"/>
+    <org.eventb.core.scCarrierSet name="Accounts" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.carrierSet#)" org.eventb.core.type="ℙ(Accounts)"/>
+    <org.eventb.core.scConstant name="Exchange_rate" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#\/" org.eventb.core.type="ℙ(ℤ)"/>
+    <org.eventb.core.scConstant name="ANY" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#=" org.eventb.core.type="Clients"/>
+    <org.eventb.core.scConstant name="destinationCurrency" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#8" org.eventb.core.type="Currency"/>
+    <org.eventb.core.scConstant name="Dollar" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#2" org.eventb.core.type="Currency"/>
+    <org.eventb.core.scCarrierSet name="ExchangeRate" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.carrierSet#7" org.eventb.core.type="ℙ(ExchangeRate)"/>
+    <org.eventb.core.scConstant name="Debit" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#(" org.eventb.core.type="AccountType"/>
+    <org.eventb.core.scConstant name="UgandaShillings" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#3" org.eventb.core.type="Currency"/>
+    <org.eventb.core.scConstant name="Credit" org.eventb.core.source="/BANK/ATM_Context.buc|org.eventb.core.contextFile#ATM_Context|org.eventb.core.constant#+" org.eventb.core.type="AccountType"/>
+</org.eventb.core.scContextFile>
